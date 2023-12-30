@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import logo from '../../assets/logo 1.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
@@ -10,7 +11,9 @@ const Navbar = () => {
       <div className='md:flex items-center justify-between bg-blue-900 py-4 md:px-10 px-7'>
         {/* logo section */}
         <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-          <img className='w-7 lg:w-7 object-cover' src={logo} alt="" />
+          <Link to="/">
+            <img className='w-7 lg:w-7 object-cover' src={logo} alt="" />
+          </Link>
         </div>
         {/* Menu icon */}
         <div onClick={() => setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
