@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3 lg:p-0 p-6">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3 lg:p-0 p-6 overflow-x-auto h-[700px]">
       {mockData.data.map((item) => (
         <Link to={`/card/${item.id}/`} key={item.id}>
         <div className='backdrop-blur-md bg-opacity-25 bg-cyan-800 rounded-[22.84px]' key={item.id}>
