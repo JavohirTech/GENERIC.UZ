@@ -4,7 +4,7 @@ import Card from '../../components/Card/Card'
 
 const Banner = () => {
   return (
-    <div className=' p-2 bg-gradient-to-t from-black to-blue-900 w-[100%] h-[93.4vh] overflow-x-hidden'>
+    <div className=' p-16 bg-gradient-to-t from-black to-blue-900 w-[100%] overflow-x-hidden'>
       <div className="container mx-auto flex lg:flex-nowrap flex-wrap">
         <div className=' w-full lg:w-[50%] text-center'>
           <div className="h-[400px] lg:h-[600px] flex items-center justify-center lg:pt-40">

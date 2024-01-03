@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         {/* linke items */}
         <ul className={`md:flex md:items-center justify-start md:pb-0 pb-8 absolute md:static bg-white md:bg-transparent md:z-auto z-10 left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? 'top-[78px] pt-8 z-10' : 'top-[-490px]'}`}>
-          <div className="gap-5 flex">
-            <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Sign In</button>
-            <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>
+          <div className="gap-0 flex">
+            <button className='text-white md:ml-8 font-semibold px-2 py-2 rounded duration-500'>Sign In</button>
+            <button className='bg-blue-600 text-white md:ml-8 font-semibold px-4 py-3 rounded duration-500'>Get Started</button>
           </div>
         </ul>
         {/* button */}
